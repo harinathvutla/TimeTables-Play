@@ -8,3 +8,10 @@ body {
 h1 {
   font-weight: 100;
 }
+
+#canv-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

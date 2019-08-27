@@ -56,7 +56,7 @@ class Points {
       //stroke("red");
       fill("red");
       point(x, y);
-      circle(x, y, 10);
+      circle(x, y, 5);
       noFill();
       // this.pointsAry.push({ pointXY: [x, y], pointNumber: i });
       this.pointsAry.push([x, y]);
