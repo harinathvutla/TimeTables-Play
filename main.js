@@ -1,27 +1,45 @@
 let circle1 = new Circle(300, 300, 500);
 //let point1 = new Points(200, 300, 300);
-let point1 = new Points(100, 300, 300);
+let point1 = new Points(200, 300, 300);
 let line1 = new Multiplierline();
 //let level = 0;
 
-let multiple = 2;
-let flag = 0;
+let multiple = 0;
+let flagLoop = 0;
 var hues = 0;
 function setup() {
   let canvas = createCanvas(600, 600);
   canvas.parent("canvas");
 }
+
+let numPoint = document.querySelector(".numpoints");
+let mul = document.querySelector(".multiplier");
+
+numPoint.onchange = generatePattern;
+mul.onchange = generatePattern;
+
 let generateButton = document.querySelector(".generate");
 generateButton.onclick = generatePattern;
 
 function generatePattern() {
   console.log("clicked");
-  let numPoint = document.querySelector(".numpoints").value;
-  let mul = document.querySelector(".multiplier").value;
-  multiple = mul;
-  point1 = new Points(numPoint, 300, 300);
-  console.log(numPoint, mul);
+
+  multiple = Number(mul.value);
+  point1 = new Points(numPoint.value, 300, 300);
+  console.log(numPoint.value, mul.value);
 }
+
+let minMul = document.querySelector(".Min-multiplier");
+let maxMul = document.querySelector(".Max-multiplier");
+let stepSize = document.querySelector(".step-size");
+let speed = document.querySelector(".speed");
+let speedAry = [, 120, 60, 30, 20, 10];
+
+let StrtPtrnPlay = document.querySelector(".strtPtrnPlay");
+StrtPtrnPlay.onclick = function StartPatternPlay() {
+  multiple = Number(minMul.value);
+  flagLoop = 1;
+};
 
 function draw() {
   /*  if (level === 0) {
@@ -43,11 +61,15 @@ function draw() {
     }
 
     console.log("hue: " + hues);
-    // line1.drawLines(multiple);
+
     line1.drawLines(multiple);
-    /*   if (frameCount % 120 === 0) {
-      multiple += 1;
+
+    if (frameCount % speedAry[speed.value] === 0 && flagLoop === 1) {
+      multiple += Number(stepSize.value);
+      if (multiple > Number(maxMul.value)) {
+        flagLoop = 0;
+      }
       console.log("multiple: " + multiple);
-    } */
+    }
   }
 }
