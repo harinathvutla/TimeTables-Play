@@ -34,11 +34,17 @@ let maxMul = document.querySelector(".Max-multiplier");
 let stepSize = document.querySelector(".step-size");
 let speed = document.querySelector(".speed");
 let speedAry = [, 120, 60, 30, 20, 10];
+let flagstopResume = false;
 
 let StrtPtrnPlay = document.querySelector(".strtPtrnPlay");
 StrtPtrnPlay.onclick = function StartPatternPlay() {
   multiple = Number(minMul.value);
   flagLoop = 1;
+};
+
+let stopResume = document.querySelector(".stop-resume");
+stopResume.onclick = function StopResumePlay() {
+  flagstopResume = !flagstopResume;
 };
 
 function draw() {
@@ -66,9 +72,13 @@ function draw() {
 
     line1.drawLines(multiple);
 
-    if (frameCount % speedAry[speed.value] === 0 && flagLoop === 1) {
+    if (
+      frameCount % speedAry[speed.value] === 0 &&
+      flagLoop === 1 &&
+      flagstopResume === false
+    ) {
       multiple += Number(stepSize.value);
-      if (multiple > Number(maxMul.value)) {
+      if (multiple >= Number(maxMul.value)) {
         flagLoop = 0;
       }
       console.log("multiple: " + multiple);
