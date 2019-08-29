@@ -56,8 +56,9 @@ function draw() {
   } else */ {
     clear();
     background("Black");
-    textSize(40);
-    text(Number(multiple.toFixed(1)), 490, 50);
+    textSize(30);
+    text("Points: " + numPoint.value, 10, 40);
+    text("Multiplier: " + Number(multiple.toFixed(1)), 405, 40);
     circle1.drawCircle();
     point1.drawPoints();
     colorMode(HSB);
