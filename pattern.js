@@ -29,30 +29,7 @@ class Points {
     for (let i = 0; i < this.numPnts; i++) {
       x = this.centerX - Math.cos(angle) * this.radius;
       y = this.centerY - Math.sin(angle) * this.radius;
-      /*       console.log(
-        "x: " +
-          x +
-          "  this.centerX: " +
-          this.centerX +
-          " angle: " +
-          angle +
-          " Math.cos(angle): " +
-          Math.cos(angle) +
-          "  this.radius: " +
-          this.radius
-      );
-      console.log(
-        "y: " +
-          y +
-          "  this.centerY: " +
-          this.centerY +
-          " angle: " +
-          angle +
-          "Math.cos(angle): " +
-          Math.sin(angle) +
-          "  this.radius: " +
-          this.radius
-      ); */
+
       //stroke("red");
       fill("red");
       point(x, y);

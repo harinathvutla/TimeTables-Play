@@ -13,28 +13,65 @@
     <div id="canv-input">
       <div id="canvas"></div>
       <div>
-        <table>
+        <div class="genMan">
+          <table id="inputs1">
+            <tr>
+              <td><label for="">Number of Points</label></td>
+              <td>
+                <input
+                  type="number"
+                  class="numpoints"
+                  value="100"
+                  min="10"
+                  step="1"
+                />
+              </td>
+              <td>
+                <button>
+                  Reset
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="">Multiplier</label></td>
+              <td>
+                <input
+                  type="number"
+                  class="multiplier"
+                  step="0.1"
+                  value="2"
+                  min="0"
+                />
+              </td>
+              <td>
+                <button>
+                  Reset
+                </button>
+              </td>
+            </tr>
+          </table>
+
+          <button class="generate">Generate</button>
+        </div>
+
+        <table id="inputs2">
           <tr>
-            <td><label for="">Number of Points</label></td>
-            <td><input type="number" class="numpoints" /></td>
-            <td>
-              <button>
-                Reset
-              </button>
-            </td>
+            <td><label for="">Min Multiplier</label></td>
+            <td><input type="number" /></td>
           </tr>
           <tr>
-            <td><label for="">Multiplier</label></td>
-            <td><input type="number" class="multiplier" /></td>
-            <td>
-              <button>
-                Reset
-              </button>
-            </td>
+            <td><label for="">Max Multiplier</label></td>
+            <td><input type="number" /></td>
+          </tr>
+          <tr>
+            <td><label for="">step</label></td>
+            <td><input type="number" /></td>
+          </tr>
+          <tr>
+            <td><label for="">speed</label></td>
+            <td><input type="number" /></td>
           </tr>
         </table>
-
-        <button class="generate">Generate</button>
       </div>
     </div>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script> -->
