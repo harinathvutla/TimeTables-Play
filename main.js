@@ -50,8 +50,8 @@ function draw() {
   } else */ {
     clear();
     background("Black");
-    textSize(32);
-    text(multiple, 500, 50);
+    textSize(40);
+    text(Number(multiple.toFixed(1)), 490, 50);
     circle1.drawCircle();
     point1.drawPoints();
     colorMode(HSB);
