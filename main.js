@@ -35,16 +35,30 @@ let stepSize = document.querySelector(".step-size");
 let speed = document.querySelector(".speed");
 let speedAry = [, 120, 60, 30, 20, 10];
 let flagstopResume = false;
+let sound;
 
+function preload() {
+  sound = loadSound("./sound/Shoulder Closures - Gunnar Olsen.mp3");
+}
 let StrtPtrnPlay = document.querySelector(".strtPtrnPlay");
 StrtPtrnPlay.onclick = function StartPatternPlay() {
   multiple = Number(minMul.value);
   flagLoop = 1;
+  sound.playMode("restart");
+  sound.play();
 };
 
 let stopResume = document.querySelector(".stop-resume");
 stopResume.onclick = function StopResumePlay() {
   flagstopResume = !flagstopResume;
+  /*   if (sound.isPlaying()) sound.pause();
+  else sound.play(); */
+
+  if (flagstopResume === true) {
+    sound.pause();
+  } else {
+    sound.play();
+  }
 };
 
 function draw() {
@@ -81,6 +95,7 @@ function draw() {
       multiple += Number(stepSize.value);
       if (multiple >= Number(maxMul.value)) {
         flagLoop = 0;
+        sound.stop();
       }
       console.log("multiple: " + multiple);
     }
