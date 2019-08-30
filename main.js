@@ -40,12 +40,14 @@ let sound;
 function preload() {
   sound = loadSound("./sound/Shoulder Closures - Gunnar Olsen.mp3");
 }
+
 let StrtPtrnPlay = document.querySelector(".strtPtrnPlay");
 StrtPtrnPlay.onclick = function StartPatternPlay() {
   multiple = Number(minMul.value);
   flagLoop = 1;
+  flagstopResume = false;
   sound.playMode("restart");
-  sound.play();
+  sound.loop();
 };
 
 let stopResume = document.querySelector(".stop-resume");
@@ -57,7 +59,7 @@ stopResume.onclick = function StopResumePlay() {
   if (flagstopResume === true) {
     sound.pause();
   } else {
-    sound.play();
+    sound.loop();
   }
 };
 
