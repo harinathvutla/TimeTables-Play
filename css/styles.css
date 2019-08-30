@@ -34,16 +34,23 @@ h1 {
   margin-bottom: 30px;
   background-color: black;
   color: white;
+  font-size: 20px;
 }
 
 #inputs2 {
   border: 1px solid #888888;
-  width: 350px;
+  width: 400px;
   height: 300px;
   border-radius: 10px;
   box-shadow: 5px 10px #888888;
   margin-bottom: 30px;
   color: white;
+  font-size: 20px;
+}
+
+input {
+  height: 30px;
+  font-size: 20px;
 }
 
 #canvas {
@@ -54,9 +61,11 @@ h1 {
 .generate {
   padding: 10px;
   margin: 30px;
-  width: 150px;
+  width: 200px;
   height: 50px;
   border-radius: 5px;
+  background-color: wheat;
+  font-size: 20px;
 }
 
 .genManual {
@@ -66,8 +75,8 @@ h1 {
 }
 
 .userplay {
-  width: 600px;
-  height: 600px;
+  width: 650px;
+  height: 500px;
 }
 
 .genLoop {
@@ -78,18 +87,31 @@ h1 {
 
 .strtPtrnPlay,
 .stop-resume {
-  width: 150px;
+  width: 220px;
   height: 50px;
   border-radius: 5px;
   padding-right: 20px;
+  background-color: wheat;
+  font-size: 20px;
 }
 
 .strtPtrnPlay {
   margin-bottom: 20px;
 }
 
-.strtPtrnPlay::hover {
-  color: crimson;
+.strtPtrnPlay:hover {
+  background-color: black;
+  color: white;
+}
+
+.stop-resume:hover {
+  background-color: black;
+  color: white;
+}
+
+.generate:hover {
+  background-color: black;
+  color: white;
 }
 
 #loopbtns {
