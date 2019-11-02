@@ -6,7 +6,7 @@
 
 ## Inspiration
 
-This app is inspired from the youtube video by maths professor "Burkard Polster" at Monash University in Melbourne, Australia [Mathologer](https://www.youtube.com/watch?v=qhbuKbxJsk8&t=185s)
+This app is inspired from the youtube video [Mathologer](https://www.youtube.com/watch?v=qhbuKbxJsk8&t=185s) by maths professor "Burkard Polster" at Monash University in Melbourne, Australia.
 
 ## Concept of the App
 
@@ -59,7 +59,7 @@ Similarly, for 200 points and the 2 times table we have the following pattern
 
 ![Join points for 3 timestable of 51 points](./images/joing200points_2timestable.png)
 
-So we can generate different various patterns by playing with different points and multipler values.
+So we can generate different patterns by playing with different points and multipler values.
 
 ## Technology
 
