@@ -1,4 +1,4 @@
-# TimeTables-Play
+# [TimeTables-Play](https://harinathvutla.github.io/TimeTables-Play/)
 
 "Generating beautiful patterns using timetables"
 
@@ -69,7 +69,7 @@ The app is built using JavaScript, P5.js, HTML5, CSS3
 
 ![website](./images/Webpage.png)
 
-[TimeTables Play](https://harinathvutla.github.io/TimeTables-Play/)
+Website Link: [TimeTables Play](https://harinathvutla.github.io/TimeTables-Play/)
 
 ## Special thanks
 
