@@ -2,7 +2,7 @@
 
 "Generating beautiful patterns using timetables"
 
-![Beautiful patterns]("./images/background_img.png")
+![Beautiful patterns]("https://github.com/harinathvutla/TimeTables-Play/tree/master/images/background_img.png")
 
 ## Inspiration
 
@@ -14,7 +14,7 @@ Every one knows timetables and using the simple timetables it is possible to gen
 To understand it, let us take a simple example as shown below
 
 Let us generate 10 points on the circle which are equidistant from each other as shown below
-![Generate 10 points]("./images/10points.png")
+![Generate 10 points]("https://github.com/harinathvutla/TimeTables-Play/tree/master/images/10points.png")
 
 And we label them as 0, 1, 2 and so on till 9, after 9 we have 10. But since we have only 10 points on the cirlce from 0 to 9 , the number 10 is a given 0, 11 to 1, 12 to 2 and so on.
 
@@ -22,7 +22,7 @@ So 0 stands for 0, 10, 20, ... and 1 for 1, 11, 21, ... and so on.
 
 Now we consider the simplest timestable the 2x times table.
 
-![Join points for 2times table]("./images/joing10points_2timestable.png")
+![Join points for 2times table]("https://github.com/harinathvutla/TimeTables-Play/tree/master/images/joing10points_2timestable.png")
 
 So we do the following
 
@@ -45,19 +45,19 @@ So from here the pattern is repeated, so that means the lines are repeated and w
 
 Now let's increase the number of points to 52, we see a pattern which is formed as shown below
 
-![Join points for 2 timestable of 52 points]("./images/joing50points_2timestable.png")
+![Join points for 2 timestable of 52 points]("https://github.com/harinathvutla/TimeTables-Play/tree/master/images/joing50points_2timestable.png")
 
 Similarly, for 10 points and the 3 times table we have the following pattern
 
-![Join points for 3 timestable of 10 points]("./images/3times_10points.png")
+![Join points for 3 timestable of 10 points]("https://github.com/harinathvutla/TimeTables-Play/tree/master/images/3times_10points.png")
 
 if we increase the points to 51 we have the following pattern
 
-![Join points for 3 timestable of 51 points]("./images/3times_50points.png")
+![Join points for 3 timestable of 51 points]("https://github.com/harinathvutla/TimeTables-Play/tree/master/images/3times_50points.png")
 
 Similarly, for 200 points and the 2 times table we have the following pattern
 
-![Join points for 3 timestable of 51 points]("./images/joing200points_2timestable.png")
+![Join points for 3 timestable of 51 points]("https://github.com/harinathvutla/TimeTables-Play/tree/master/images/joing200points_2timestable.png")
 
 So we can generate different various patterns by playing with different points and multipler values.
 
