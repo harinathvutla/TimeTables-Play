@@ -1,4 +1,4 @@
-# Gem-Box
+# TimeTables-Play
 
 "Generating beautiful patterns using timetables"
 
